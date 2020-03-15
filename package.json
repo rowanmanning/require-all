@@ -1,0 +1,36 @@
+{
+  "name": "@rowanmanning/require-all",
+  "version": "0.0.0",
+  "description": "Require all modules in a directory recursively",
+  "keywords": [
+    "require"
+  ],
+  "author": "Rowan Manning (https://rowanmanning.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rowanmanning/require-all.git"
+  },
+  "homepage": "https://github.com/rowanmanning/require-all",
+  "bugs": "https://github.com/rowanmanning/require-all/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6.9.0"
+  },
+  "dependencies": {
+    "@rowanmanning/list-all-files": "^1.0.2"
+  },
+  "devDependencies": {
+    "@rowanmanning/eslint-config": "^2.1.0",
+    "@rowanmanning/make": "^2.0.0",
+    "eslint": "^6.8.0",
+    "mocha": "^7.1.0",
+    "mockery": "^2.1.0",
+    "nyc": "^15.0.0",
+    "proclaim": "^3.6.0",
+    "sinon": "^9.0.1"
+  },
+  "scripts": {
+    "test": "make ci"
+  }
+}
