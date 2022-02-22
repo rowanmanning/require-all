@@ -1,7 +1,7 @@
 'use strict';
 
-const assert = require('proclaim');
-const mockery = require('mockery');
+const {assert} = require('chai');
+const td = require('testdouble');
 
 describe('lib/require-all', () => {
 	let listAllFiles;
@@ -9,8 +9,7 @@ describe('lib/require-all', () => {
 	let requireAll;
 
 	beforeEach(() => {
-		listAllFiles = require('../mock/npm/@rowanmanning/list-all-files');
-		mockery.registerMock('@rowanmanning/list-all-files', listAllFiles);
+		listAllFiles = td.replace('@rowanmanning/list-all-files');
 
 		mockFiles = {
 			fileA: 'mock-file-a',
@@ -19,12 +18,12 @@ describe('lib/require-all', () => {
 			fileD: 'mock-file-d',
 			fileE: 'mock-file-e'
 		};
-		mockery.registerMock('/mock-dir/a.js', mockFiles.fileA);
-		mockery.registerMock('/mock-dir/mock-subdir-1/b.JS', mockFiles.fileB);
-		mockery.registerMock('/mock-dir/mock-subdir-1/mock-subdir-2/c.json', mockFiles.fileC);
-		mockery.registerMock('/mock-dir/d.ts', mockFiles.fileD);
+		td.replace('/mock-dir/a.js', mockFiles.fileA);
+		td.replace('/mock-dir/mock-subdir-1/b.JS', mockFiles.fileB);
+		td.replace('/mock-dir/mock-subdir-1/mock-subdir-2/c.json', mockFiles.fileC);
+		td.replace('/mock-dir/d.ts', mockFiles.fileD);
 
-		listAllFiles.sync.returns([
+		td.when(listAllFiles.sync('/mock-dir')).thenReturn([
 			'/mock-dir/a.js',
 			'/mock-dir/mock-subdir-1/b.JS',
 			'/mock-dir/mock-subdir-1/mock-subdir-2/c.json',
