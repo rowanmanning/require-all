@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/rowanmanning/require-all/compare/v2.2.0...v2.2.1) (2022-07-09)
+
+
+### Bug Fixes
+
+* hide the misc changelog section ([426c70b](https://github.com/rowanmanning/require-all/commit/426c70bac773b41b52d0404f2dca5614da9fe55f))
+
 ## [2.2.0](https://github.com/rowanmanning/require-all/compare/v2.1.1...v2.2.0) (2022-06-10)
 
 
