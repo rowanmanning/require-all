@@ -109,4 +109,10 @@ describe('lib/require-all', () => {
 
 	});
 
+	describe('.default', () => {
+		it('aliases the module exports', () => {
+			assert.strictEqual(requireAll, requireAll.default);
+		});
+	});
+
 });
