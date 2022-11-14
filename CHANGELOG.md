@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.2](https://github.com/rowanmanning/require-all/compare/v2.2.1...v2.2.2) (2022-11-14)
+
+
+### Bug Fixes
+
+* bump @rowanmanning/list-all-files from 2.2.1 to 2.2.2 ([e8863d2](https://github.com/rowanmanning/require-all/commit/e8863d26e70885557081efe484416237834cb98b))
+* improve TypeScript compatibility ([b4abfb9](https://github.com/rowanmanning/require-all/commit/b4abfb9176c7c395103e190c9c4c582c465b5ae4))
+
 ## [2.2.1](https://github.com/rowanmanning/require-all/compare/v2.2.0...v2.2.1) (2022-07-09)
 
 
