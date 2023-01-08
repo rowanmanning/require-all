@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.3](https://github.com/rowanmanning/require-all/compare/v2.2.2...v2.2.3) (2023-01-08)
+
+
+### Bug Fixes
+
+* bump @rowanmanning/list-all-files from 2.2.2 to 2.2.3 ([6d4c1ae](https://github.com/rowanmanning/require-all/commit/6d4c1ae795632450dbe4fe82aa11ebbe2c1c4e4c))
+* bump json5 from 2.2.1 to 2.2.3 ([610e5ef](https://github.com/rowanmanning/require-all/commit/610e5efe723a4d7cc9be1169835c979484354b56))
+
 ## [2.2.2](https://github.com/rowanmanning/require-all/compare/v2.2.1...v2.2.2) (2022-11-14)
 
 
