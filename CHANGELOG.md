@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.4](https://github.com/rowanmanning/require-all/compare/v2.2.3...v2.2.4) (2023-02-14)
+
+
+### Bug Fixes
+
+* bump @rowanmanning/list-all-files from 2.2.3 to 2.2.4 ([50f8124](https://github.com/rowanmanning/require-all/commit/50f8124c1ed8dbd8dc1a7f3c4af64cd8fcd40f7e))
+* support npm v9 ([df2fa7f](https://github.com/rowanmanning/require-all/commit/df2fa7f79187a865b0c3fc90be3e44a60ed2c695))
+
 ## [2.2.3](https://github.com/rowanmanning/require-all/compare/v2.2.2...v2.2.3) (2023-01-08)
 
 
