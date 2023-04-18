@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.0.1](https://github.com/rowanmanning/require-all/compare/v3.0.0...v3.0.1) (2023-04-18)
+
+
+### Bug Fixes
+
+* add support for Node.js 20 ([aee31e1](https://github.com/rowanmanning/require-all/commit/aee31e157ff8239ef50519670562b170af95db85))
+* bump @rowanmanning/list-all-files from 3.0.0 to 3.0.1 ([df8b10d](https://github.com/rowanmanning/require-all/commit/df8b10ddcbc5134f4ae23eef8d69f4084cab2733))
+
 ## [3.0.0](https://github.com/rowanmanning/require-all/compare/v2.2.4...v3.0.0) (2023-03-25)
 
 
