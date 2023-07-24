@@ -1,6 +1,6 @@
 'use strict';
 
-const {assert} = require('chai');
+const assert = require('node:assert');
 const td = require('testdouble');
 
 describe('lib/require-all', () => {
@@ -35,7 +35,7 @@ describe('lib/require-all', () => {
 	});
 
 	it('exports a function', () => {
-		assert.isFunction(requireAll);
+		assert.strictEqual(typeof requireAll, 'function');
 	});
 
 	describe('requireAll(directoryPath)', () => {
@@ -46,8 +46,8 @@ describe('lib/require-all', () => {
 		});
 
 		it('returns an array of module info objects, ignoring non JS and JSON files', () => {
-			assert.isArray(returnValue);
-			assert.deepEqual(returnValue, [
+			assert.ok(Array.isArray(returnValue));
+			assert.deepStrictEqual(returnValue, [
 				{
 					name: 'a',
 					fullPath: '/mock-dir/a.js',
@@ -84,8 +84,8 @@ describe('lib/require-all', () => {
 		});
 
 		it('returns an array of module info objects, including file types defined in `options.extensions`', () => {
-			assert.isArray(returnValue);
-			assert.deepEqual(returnValue, [
+			assert.ok(Array.isArray(returnValue));
+			assert.deepStrictEqual(returnValue, [
 				{
 					name: 'a',
 					fullPath: '/mock-dir/a.js',

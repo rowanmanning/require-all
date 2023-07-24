@@ -1,6 +1,6 @@
 'use strict';
 
-const {assert} = require('chai');
+const assert = require('node:assert');
 const requireAll = require('../..');
 
 describe('requireAll(directoryPath)', () => {
@@ -11,7 +11,7 @@ describe('requireAll(directoryPath)', () => {
 	});
 
 	it('returns the expected modules', () => {
-		assert.deepEqual(returnValue, [
+		assert.deepStrictEqual(returnValue, [
 			{
 				name: 'file-one',
 				fullPath: `${__dirname}/fixture/main/file-one.js`,
