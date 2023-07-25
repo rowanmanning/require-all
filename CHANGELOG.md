@@ -3,43 +3,9 @@
 ## 3.0.3 (2023-07-25)
 
 
-### ⚠ BREAKING CHANGES
-
-* drop official support for npm v7
-* drop support for Node.js 14
-
-### Features
-
-* ensure typescript types are always valid ([eee71ec](https://github.com/rowanmanning/require-all/commit/eee71ece46933eee773388d2bea2aaaccec34bff))
-
-
 ### Bug Fixes
 
-* add support for Node.js 20 ([aee31e1](https://github.com/rowanmanning/require-all/commit/aee31e157ff8239ef50519670562b170af95db85))
-* bump @rowanmanning/list-all-files from 2.1.1 to 2.2.0 ([152b140](https://github.com/rowanmanning/require-all/commit/152b140e860d28308e6bed618f07fb13c612bef9))
-* bump @rowanmanning/list-all-files from 2.2.1 to 2.2.2 ([e8863d2](https://github.com/rowanmanning/require-all/commit/e8863d26e70885557081efe484416237834cb98b))
-* bump @rowanmanning/list-all-files from 2.2.2 to 2.2.3 ([6d4c1ae](https://github.com/rowanmanning/require-all/commit/6d4c1ae795632450dbe4fe82aa11ebbe2c1c4e4c))
-* bump @rowanmanning/list-all-files from 2.2.3 to 2.2.4 ([50f8124](https://github.com/rowanmanning/require-all/commit/50f8124c1ed8dbd8dc1a7f3c4af64cd8fcd40f7e))
-* bump @rowanmanning/list-all-files from 2.2.4 to 3.0.0 ([dde5e3c](https://github.com/rowanmanning/require-all/commit/dde5e3c75256a9120d8e5d3acf61b085c3554679))
-* bump @rowanmanning/list-all-files from 3.0.0 to 3.0.1 ([df8b10d](https://github.com/rowanmanning/require-all/commit/df8b10ddcbc5134f4ae23eef8d69f4084cab2733))
-* bump @rowanmanning/list-all-files from 3.0.1 to 3.0.2 ([0ecd4a3](https://github.com/rowanmanning/require-all/commit/0ecd4a319aba7d895245c032c8248a2796f0b147))
-* bump json5 from 2.2.1 to 2.2.3 ([610e5ef](https://github.com/rowanmanning/require-all/commit/610e5efe723a4d7cc9be1169835c979484354b56))
-* hide the misc changelog section ([426c70b](https://github.com/rowanmanning/require-all/commit/426c70bac773b41b52d0404f2dca5614da9fe55f))
-* improve TypeScript compatibility ([b4abfb9](https://github.com/rowanmanning/require-all/commit/b4abfb9176c7c395103e190c9c4c582c465b5ae4))
-* sort out broken releases ([8081be3](https://github.com/rowanmanning/require-all/commit/8081be3458b9fe38a8102a88a6b3b92d3bf7ecd6))
-* support npm v9 ([df2fa7f](https://github.com/rowanmanning/require-all/commit/df2fa7f79187a865b0c3fc90be3e44a60ed2c695))
-* use node-prefixed modules ([710682e](https://github.com/rowanmanning/require-all/commit/710682e6c6c01c0592d3383a7b291ac8f07fb1b8))
-
-
-### Documentation Changes
-
-* manually define changelog sections ([4fc77fe](https://github.com/rowanmanning/require-all/commit/4fc77fe32ded1c301a11f1f607b6ee827e138df5))
-
-
-### Miscellaneous
-
-* drop official support for npm v7 ([f8f347c](https://github.com/rowanmanning/require-all/commit/f8f347c08273185770fbe904912d1f51a29ecd50))
-* drop support for Node.js 14 ([f77f579](https://github.com/rowanmanning/require-all/commit/f77f579035b4001af4e60a97003fcc82c50d80db))
+* sort out broken releases
 
 ## [3.0.1](https://github.com/rowanmanning/require-all/compare/v3.0.0...v3.0.1) (2023-04-18)
 
