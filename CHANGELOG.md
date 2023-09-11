@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.4](https://github.com/rowanmanning/require-all/compare/v3.0.3...v3.0.4) (2023-09-11)
+
+
+### Bug Fixes
+
+* bump @rowanmanning/list-all-files from 3.0.2 to 3.0.3 ([a2f29b4](https://github.com/rowanmanning/require-all/commit/a2f29b408b59f3ace8d5d46c1d2dba1fd21a6aa9))
+
 ## 3.0.3 (2023-07-25)
 
 
