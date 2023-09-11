@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/rowanmanning/require-all/compare/v3.0.4...v4.0.0) (2023-09-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for Node.js 16
+
+### Miscellaneous
+
+* drop support for Node.js 16 ([737b8b5](https://github.com/rowanmanning/require-all/commit/737b8b5bc0d092ab600c3c525a5965a8ce6ed3c5))
+
 ## [3.0.4](https://github.com/rowanmanning/require-all/compare/v3.0.3...v3.0.4) (2023-09-11)
 
 
