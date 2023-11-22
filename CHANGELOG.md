@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.1](https://github.com/rowanmanning/require-all/compare/v4.0.0...v4.0.1) (2023-11-22)
+
+
+### Bug Fixes
+
+* bump @rowanmanning/list-all-files from 3.0.3 to 4.0.0 ([c42fd73](https://github.com/rowanmanning/require-all/commit/c42fd735240d388008410657f8ed16b30bb0e503))
+
 ## [4.0.0](https://github.com/rowanmanning/require-all/compare/v3.0.4...v4.0.0) (2023-09-11)
 
 
