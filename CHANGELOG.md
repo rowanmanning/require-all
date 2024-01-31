@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.1.0](https://github.com/rowanmanning/require-all/compare/v4.0.1...v4.1.0) (2024-01-31)
+
+
+### Features
+
+* add official support for npm 10 ([c2c7386](https://github.com/rowanmanning/require-all/commit/c2c7386fd66422eb83665c1e44fb013b5e40969a))
+
+
+### Bug Fixes
+
+* bump @rowanmanning/list-all-files from 4.0.0 to 4.1.0 ([75eb367](https://github.com/rowanmanning/require-all/commit/75eb367e6226fe8c195c41961af8231404e2beae))
+
 ## [4.0.1](https://github.com/rowanmanning/require-all/compare/v4.0.0...v4.0.1) (2023-11-22)
 
 
