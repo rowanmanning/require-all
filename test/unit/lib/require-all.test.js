@@ -68,7 +68,6 @@ describe('lib/require-all', () => {
 				}
 			]);
 		});
-
 	});
 
 	describe('requireAll(directoryPath, options)', () => {
@@ -76,10 +75,7 @@ describe('lib/require-all', () => {
 
 		beforeEach(() => {
 			returnValue = requireAll('/mock-dir', {
-				extensions: [
-					'.js',
-					'.ts'
-				]
+				extensions: ['.js', '.ts']
 			});
 		});
 
@@ -106,7 +102,6 @@ describe('lib/require-all', () => {
 				}
 			]);
 		});
-
 	});
 
 	describe('.default', () => {
@@ -114,5 +109,4 @@ describe('lib/require-all', () => {
 			assert.strictEqual(requireAll, requireAll.default);
 		});
 	});
-
 });
