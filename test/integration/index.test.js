@@ -1,5 +1,6 @@
 'use strict';
 
+const { beforeEach, describe, it } = require('node:test');
 const assert = require('node:assert');
 const requireAll = require('../..');
 

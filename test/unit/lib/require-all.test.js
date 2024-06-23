@@ -1,7 +1,10 @@
 'use strict';
 
+const { afterEach, beforeEach, describe, it } = require('node:test');
 const assert = require('node:assert');
 const td = require('testdouble');
+
+td.config({ ignoreWarnings: true });
 
 describe('lib/require-all', () => {
 	let listAllFiles;
@@ -33,6 +36,8 @@ describe('lib/require-all', () => {
 
 		requireAll = require('../../../lib/require-all');
 	});
+
+	afterEach(() => td.reset());
 
 	it('exports a function', () => {
 		assert.strictEqual(typeof requireAll, 'function');
