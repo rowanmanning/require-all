@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.0](https://github.com/rowanmanning/require-all/compare/v4.1.0...v4.2.0) (2024-06-23)
+
+
+### Features
+
+* add Node.js 22 support ([bbddd96](https://github.com/rowanmanning/require-all/commit/bbddd962ed104271b42bb11677abdb62a569e9f4))
+
 ## [4.1.0](https://github.com/rowanmanning/require-all/compare/v4.0.1...v4.1.0) (2024-01-31)
 
 
