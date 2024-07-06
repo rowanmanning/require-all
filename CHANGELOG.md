@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.1](https://github.com/rowanmanning/require-all/compare/v4.2.0...v4.2.1) (2024-07-06)
+
+
+### Bug Fixes
+
+* bump @rowanmanning/list-all-files from 4.1.0 to 4.2.0 ([521bb51](https://github.com/rowanmanning/require-all/commit/521bb51f456c17e073975d22f2751521c7ecbe2f))
+
 ## [4.2.0](https://github.com/rowanmanning/require-all/compare/v4.1.0...v4.2.0) (2024-06-23)
 
 
