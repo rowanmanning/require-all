@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.2.2](https://github.com/rowanmanning/require-all/compare/v4.2.1...v4.2.2) (2024-07-27)
+
+
+### Bug Fixes
+
+* bump @rowanmanning/list-all-files from 4.2.0 to 4.2.1 ([4789e9c](https://github.com/rowanmanning/require-all/commit/4789e9cebd1885506124130111f547a9fd21375f))
+* prevent husky from failing ([1e0c84e](https://github.com/rowanmanning/require-all/commit/1e0c84e1981ceea516d4684831e627e7d6e9db03))
+
 ## [4.2.1](https://github.com/rowanmanning/require-all/compare/v4.2.0...v4.2.1) (2024-07-06)
 
 
