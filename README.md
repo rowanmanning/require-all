@@ -16,7 +16,7 @@ Require all modules in a directory recursively.
 
 This library requires the following to run:
 
-  * [Node.js](https://nodejs.org/) 18+
+  * [Node.js](https://nodejs.org/) 20+
 
 
 ## Usage
