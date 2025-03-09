@@ -3,13 +3,11 @@
 
 Require all modules in a directory recursively.
 
-
-## Table of Contents
-
-  * [Requirements](#requirements)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [License](#license)
+* [Requirements](#requirements)
+* [Usage](#usage)
+* [Migration](#migration)
+* [Contributing](#contributing)
+* [License](#license)
 
 
 ## Requirements
@@ -57,6 +55,11 @@ const modules = requireAll('./directory-path');
     moduleExports: Object
 }
 ```
+
+
+## Migration
+
+A new major version of this project is released if breaking changes are introduced. We maintain a [migration guide](docs/migration.md) to help users migrate between these versions.
 
 
 ## Contributing
