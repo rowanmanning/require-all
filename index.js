@@ -4,23 +4,36 @@ const listAllFiles = require('@rowanmanning/list-all-files').sync;
 const path = require('node:path');
 
 /**
+ * @typedef {object} Options
+ * @property {string[]} [extensions]
+ */
+
+/**
+ * Default options to be used in a require.
+ *
+ * @private
+ * @type {Required<Options>}
+ */
+const defaultOptions = {
+	extensions: ['.js', '.json']
+};
+
+/**
  * Require all modules in a directory recursively.
  *
  * @public
  * @param {string} directoryPath
  *     The directory path to look for files in.
- * @param {object} [options]
+ * @param {Options} [options]
  *     An options object used to configure the require.
- * @param {string[]} [options.extensions]
- *     The file extensions to require.
  * @returns {ModuleInfo[]}
  *     Returns an array of modules.
  */
 exports.requireAll = function requireAll(directoryPath, options) {
-	const defaultedOptions = Object.assign({}, requireAll.defaultOptions, options);
+	const defaultedOptions = Object.assign({}, defaultOptions, options);
 	return listAllFiles(directoryPath)
 		.map((filePath) => path.parse(filePath))
-		.filter((file) => defaultedOptions?.extensions?.includes(file.ext.toLowerCase()))
+		.filter((file) => defaultedOptions.extensions.includes(file.ext.toLowerCase()))
 		.map(requireModule.bind(null, directoryPath));
 };
 
@@ -59,13 +72,3 @@ function requireModule(baseDirectoryPath, file) {
  * @property {any} moduleExports
  *     The value of the module's `exports` property.
  */
-
-/**
- * Default options to be used in a require.
- *
- * @private
- * @type {object}
- */
-exports.requireAll.defaultOptions = {
-	extensions: ['.js', '.json']
-};

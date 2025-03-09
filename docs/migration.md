@@ -5,6 +5,8 @@ This document outlines how to migrate to new major breaking versions of this lib
 
 * [Migrating from v4 to v5](#migrating-from-v4-to-v5)
   * [Dropped Node.js v18 support](#dropped-nodejs-v18-support)
+  * [Switch to named exports](#switch-to-named-exports)
+  * [Remove `defaultOptions`](#remove-defaultoptions)
 * [Migrating from v3 to v4](#migrating-from-v3-to-v4)
   * [Dropped Node.js v16 support](#dropped-nodejs-v16-support)
 * [Migrating from v2 to v3](#migrating-from-v2-to-v3)
@@ -33,6 +35,10 @@ or
 - import requireAll from '@rowanmanning/require-all';
 + import { requireAll } from '@rowanmanning/require-all';
 ```
+
+### Remove `defaultOptions`
+
+There is no longer an undocumented named export called `defaultOptions`  - this would let you globally configure the defaults for `requireAll` and it's not necessary. Use the second `options` parameter of `requireAll` instead.
 
 ## Migrating from v3 to v4
 
