@@ -6,7 +6,7 @@ const td = require('testdouble');
 
 td.config({ ignoreWarnings: true });
 
-describe('lib/require-all', () => {
+describe('require-all', () => {
 	let listAllFiles;
 	let mockFiles;
 	let requireAll;
@@ -34,7 +34,7 @@ describe('lib/require-all', () => {
 			'/mock-dir/e.txt'
 		]);
 
-		requireAll = require('../../../lib/require-all');
+		requireAll = require('../..');
 	});
 
 	afterEach(() => td.reset());
