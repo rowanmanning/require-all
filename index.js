@@ -1,6 +1,6 @@
 'use strict';
 
-const listAllFiles = require('@rowanmanning/list-all-files').sync;
+const { listAllFilesSync } = require('@rowanmanning/list-all-files');
 const path = require('node:path');
 
 /**
@@ -16,7 +16,7 @@ const defaultOptions = {
 /** @type {requireAll} */
 exports.requireAll = function requireAll(directoryPath, options) {
 	const defaultedOptions = Object.assign({}, defaultOptions, options);
-	return listAllFiles(directoryPath)
+	return listAllFilesSync(directoryPath)
 		.map((filePath) => path.parse(filePath))
 		.filter((file) => defaultedOptions.extensions.includes(file.ext.toLowerCase()))
 		.map(requireModule.bind(null, directoryPath));
