@@ -1,5 +1,29 @@
 # Changelog
 
+## [5.0.0](https://github.com/rowanmanning/require-all/compare/v4.2.2...v5.0.0) (2025-03-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* don't expose default options
+* move to named exports
+* drop Node.js 18
+
+### Bug Fixes
+
+* bump @rowanmanning/list-all-files from 4.2.1 to 5.0.0 ([b98d754](https://github.com/rowanmanning/require-all/commit/b98d7548dbee1c1b3a3fca7120443ae8630251f2))
+
+
+### Miscellaneous Chores
+
+* drop Node.js 18 ([5319f55](https://github.com/rowanmanning/require-all/commit/5319f55f41a726589cc337b3045b2fc80624dae7))
+
+
+### Code Refactoring
+
+* don't expose default options ([e344dcb](https://github.com/rowanmanning/require-all/commit/e344dcb1ca443f88b861d5d27596bde8e8a38c93))
+* move to named exports ([14deb67](https://github.com/rowanmanning/require-all/commit/14deb677db56682effa54d07bd730259b61e154e))
+
 ## [4.2.2](https://github.com/rowanmanning/require-all/compare/v4.2.1...v4.2.2) (2024-07-27)
 
 
