@@ -18,6 +18,22 @@ This document outlines how to migrate to new major breaking versions of this lib
 
 The library now only supports Node.js v20 and above.
 
+### Switch to named exports
+
+We've moved away from using a default export for the `requireAll` function,  It's now a named export. You'll need to update your imports:
+
+```diff
+- const requireAll = require('@rowanmanning/require-all');
++ const { requireAll } = require('@rowanmanning/require-all');
+```
+
+or
+
+```diff
+- import requireAll from '@rowanmanning/require-all';
++ import { requireAll } from '@rowanmanning/require-all';
+```
+
 ## Migrating from v3 to v4
 
 ### Dropped Node.js v16 support

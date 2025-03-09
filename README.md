@@ -28,7 +28,7 @@ npm install @rowanmanning/require-all
 Load the library into your code with a `require` call:
 
 ```js
-const requireAll = require('@rowanmanning/require-all');
+const { requireAll } = require('@rowanmanning/require-all');
 ```
 
 Require all modules in a directory. **Note:** this loads modules synchronously, so it's best used only where blocking doesn't matter, e.g. in your application's startup process:

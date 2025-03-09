@@ -34,7 +34,7 @@ describe('require-all', () => {
 			'/mock-dir/e.txt'
 		]);
 
-		requireAll = require('../..');
+		requireAll = require('../..').requireAll;
 	});
 
 	afterEach(() => td.reset());
@@ -106,12 +106,6 @@ describe('require-all', () => {
 					moduleExports: 'mock-file-d'
 				}
 			]);
-		});
-	});
-
-	describe('.default', () => {
-		it('aliases the module exports', () => {
-			assert.strictEqual(requireAll, requireAll.default);
 		});
 	});
 });

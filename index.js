@@ -16,13 +16,13 @@ const path = require('node:path');
  * @returns {ModuleInfo[]}
  *     Returns an array of modules.
  */
-function requireAll(directoryPath, options) {
+exports.requireAll = function requireAll(directoryPath, options) {
 	const defaultedOptions = Object.assign({}, requireAll.defaultOptions, options);
 	return listAllFiles(directoryPath)
 		.map((filePath) => path.parse(filePath))
 		.filter((file) => defaultedOptions?.extensions?.includes(file.ext.toLowerCase()))
 		.map(requireModule.bind(null, directoryPath));
-}
+};
 
 /**
  * Require a module.
@@ -66,12 +66,6 @@ function requireModule(baseDirectoryPath, file) {
  * @private
  * @type {object}
  */
-requireAll.defaultOptions = {
+exports.requireAll.defaultOptions = {
 	extensions: ['.js', '.json']
 };
-
-/** @type {requireAll} */
-module.exports = requireAll;
-
-// @ts-expect-error
-module.exports.default = module.exports;
