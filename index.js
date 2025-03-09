@@ -30,7 +30,7 @@ function requireAll(directoryPath, options) {
  * @private
  * @param {string} baseDirectoryPath
  *     The base directory path that was used to find files.
- * @param {object} file
+ * @param {import('node:path').ParsedPath} file
  *     A file object.
  * @returns {ModuleInfo}
  *     Returns module information.
@@ -70,5 +70,8 @@ requireAll.defaultOptions = {
 	extensions: ['.js', '.json']
 };
 
+/** @type {requireAll} */
 module.exports = requireAll;
+
+// @ts-expect-error
 module.exports.default = module.exports;
