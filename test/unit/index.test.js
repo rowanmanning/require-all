@@ -26,7 +26,7 @@ describe('require-all', () => {
 		td.replace('/mock-dir/mock-subdir-1/mock-subdir-2/c.json', mockFiles.fileC);
 		td.replace('/mock-dir/d.ts', mockFiles.fileD);
 
-		td.when(listAllFiles.sync('/mock-dir')).thenReturn([
+		td.when(listAllFiles.listAllFilesSync('/mock-dir')).thenReturn([
 			'/mock-dir/a.js',
 			'/mock-dir/mock-subdir-1/b.JS',
 			'/mock-dir/mock-subdir-1/mock-subdir-2/c.json',

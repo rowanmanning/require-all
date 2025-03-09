@@ -27,7 +27,7 @@
     "prepare": "husky || true"
   },
   "dependencies": {
-    "@rowanmanning/list-all-files": "^4.0.0"
+    "@rowanmanning/list-all-files": "^5.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
