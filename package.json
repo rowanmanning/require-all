@@ -1,6 +1,6 @@
 {
   "name": "@rowanmanning/require-all",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "Require all modules in a directory recursively",
   "keywords": [
     "require"

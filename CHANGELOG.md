@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.1.0](https://github.com/rowanmanning/require-all/compare/v5.0.0...v5.1.0) (2025-05-21)
+
+
+### Features
+
+* add Node.js 24 support ([8637998](https://github.com/rowanmanning/require-all/commit/8637998c45047747990d5f0d5a47cc88b353117e))
+
 ## [5.0.0](https://github.com/rowanmanning/require-all/compare/v4.2.2...v5.0.0) (2025-03-09)
 
 
